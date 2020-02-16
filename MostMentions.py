@@ -34,4 +34,27 @@
 
 def mostMentions(keywords, posts):
     ## SEU CÓDIGO AQUI
-    pass
+    qtd_total = [] #Array da quantidade total de cada palavra chave
+
+    for key in keywords:
+        qtd = 0 # Quantidade de cada palavra chave nos posts
+        for postagens in posts:
+
+            qtd = qtd + postagens.lower().count(key.lower())
+
+        qtd_total.append(qtd)
+
+    print(max(qtd_total))
+
+
+
+keywords = ['Magazine Luiza', 'Eletroshopping', "Habib's"]
+
+posts = ['A magazineluiza tá demais nessa black fraude!',
+         'A eletroshopping tá ganhando pra magazine luizAAAAA',
+         'A eletroshop tá se garantindo!',
+         'Habibs, aprenda com a magazine luiza a fazer promocao!']
+
+mostMentions(keywords, posts)
+
+
