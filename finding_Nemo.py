@@ -19,7 +19,7 @@ Notes
     Nemo's, or anything that says Nemo with something behind it, doesn't count as Finding Nemo.
     If there are multiple Nemo's in the sentence, only return for the first one.
 
-URL: https://edabit.com/challenge/c23dFfNiKbnguSQtq
+URL: https://edabit.com/challenge/c23dFfNiKbnguSQt
 
 """
 
