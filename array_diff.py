@@ -12,18 +12,21 @@ array_diff([1,2,2,2,3],[2]) == [1,3]
 """
 
 
-def array_diff(a, b):
-    lista_saida = []
-    if b == []:
-        lista_saida = a
-    elif a == []:
-        lista_saida = []
-    else:
-        for x in range(len(b)):
-            lista_saida = list(filter(lambda y: y != b[x], a))
-            a = lista_saida
+# def array_diff(a, b):
+#     lista_saida = []
+#     if b == []:
+#         lista_saida = a
+#     elif a == []:
+#         lista_saida = []
+#     else:
+#         for x in range(len(b)):
+#             lista_saida = list(filter(lambda y: y != b[x], a))
+#             a = lista_saida
+#
+#     return list(lista_saida)
 
-    return list(lista_saida)
+def array_diff(a, b):
+    return [x for x in a if x not in b]
 
 
 print(array_diff([1, 2], [1]))  # , [2], "a was [1,2], b was [1], expected [2]")
